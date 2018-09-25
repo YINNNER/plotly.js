@@ -1,0 +1,47 @@
+进度文档
+2016302580104 朱旷
+
+第3周-第4周汇报进度前（9.22-9.26）
+目标：读懂每个文件夹的代码是用来做什么的。
+
+负责 根目录零散文件\..和\.circleci,\.github,\devtool文件夹
+
+\.circleci
+该文件夹下两个文件
+config.yml 项目使用circleci工具产生的配置文件， 部署代码主要看deployment块,分为staging 和production两个环境,分别对应develop和master分支.当你把代码推送到github的不同分支时,就会执行不同的命令,你可以在这里写git命令来把代码推送到不同服务器.
+test.sh  命令行执行推送命令
+
+\.github
+该文件夹下三个说明文件
+ISSUE_TEMPLATE.md 对js文件可能遇到的问题以及可能存在问题解法的网站进行了说明
+PULL_REQUEST_TEMPLATE.md 对开发者的一些建议，更新文件以及推送项目的一些注意事项
+SUPPORT.md  一些可以寻找帮助的网址信息
+
+\.devtool
+该文件夹下两个文件夹和一个文件
+.eslintrc  环境下定义了预定义的全局变量
+\.devtool\image_viewer
+index.html  链接到../../build/image_viewer-bundle.js查看
+server.js   建立图像查看器包
+viewer.js   NB.BRFS只理解硬编码路径
+\.devtool\test_dashboard
+devtools.js 用devtools工具对项目进行测试
+index.html 
+perf.js  性能测试工具
+server.js  为plotly.js制作watchified bundle并打包所有的东西
+style.css  层叠样式表
+
+\.eslintignore
+\.eslintrc
+\.gitignore
+\.npmignore
+\bower.json
+\BUILDING.md
+\CHANGELOG.md
+\composer.json
+\CONTRIBUTING.md
+\LICENSE
+\package.json
+\package-lock.json
+\README.md
+\SECURITY.md
