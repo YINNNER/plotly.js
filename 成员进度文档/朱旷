@@ -31,17 +31,17 @@ perf.js  性能测试工具
 server.js  为plotly.js制作watchified bundle并打包所有的东西
 style.css  层叠样式表
 
-\.eslintignore
-\.eslintrc
-\.gitignore
-\.npmignore
-\bower.json
-\BUILDING.md
-\CHANGELOG.md
-\composer.json
-\CONTRIBUTING.md
-\LICENSE
-\package.json
-\package-lock.json
-\README.md
-\SECURITY.md
+\.eslintignore  eslint代码检查文件设置
+\.eslintrc      对eslint的配置及导出
+\.gitignore     在使用git提交文件时，忽略的文件与文件夹
+\.npmignore     如果项目中没有使用.npmignore文件，那么它默认匹配的是.gitignore中的规则以及一些额外的默认配置。可是如果在项目中添加了.npmignore文件，.gitignore中的规则就会被忽略，而且这时候需要维护两份规则文件。
+\bower.json     bower.json的配置项和其他包管理工具，比如npm，composer的都差不多，也可以通过分析这个文件来思考包管理器是如何运行的。
+\BUILDING.md    building说明文档
+\CHANGELOG.md   change说明文档
+\composer.json   声明包之间的相互关系和其他的一些元素标签
+\CONTRIBUTING.md   contribuilding说明文档
+\LICENSE        使用许可证
+\package.json    整个项目的配置信息
+\package-lock.json  锁定安装时的包的版本号，并且需要上传到git，以保证其他人在npm install时大家的依赖能保证一致
+\README.md      项目说明文档
+\SECURITY.md      安全说明文档
