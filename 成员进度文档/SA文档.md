@@ -93,8 +93,6 @@ In the section on the development view, different modules of plotly.js is descri
 
 ### Codeline organization
 
-## Security Perspective
-
 ## Performance & Scalability Perspective
 
 ## Technial debt
