@@ -33,6 +33,20 @@ Every major company in Science, Engineering, and Finance is moving their softwar
 This document gives an overview of the overarching architecture of the plotly.js project. It sets the scens by introducing the project and discussing its stakeholders. It then takes on different viewpoints and perspectives as defined by Rozanski and Woods [[4]](#4) to analyse Plotly.js's performance, in addition to discussing the technical debt hidden in the depths of the codebase.
 
 ## Stakeholders
+Many stakeholders are involved with Plotly.
+
+Table 1: Summary most important stakeholders.
+
+| Stakeholders  | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
+| Acquirers     | The founders of Plotly are the ones that authorize funding for the products and system developement. |
+| Users         | Plotly is widely used in modeling, statistics and other drawing software, users include many people and companies who need to draw visual models. |
+| Testers       | Before the release of the new function, there will be a test team to test the function of the program, so as to ensure fewer mistakes. |
+| Developers    | The people working on the code for the end product are both the hard- and software team. |
+| Support staff | The website plays a central role in staying in tough with users that report bugs as well as happily explaining nice projects that can be built with the products. |
+| Suppliers     | Partners who provide all kinds of hardware and software      |
+| Maintainers   | Software solutions are assessed by the Software development team in order to maintain the programming standards and architectural choices. |
+
 
 ## Context view
 
