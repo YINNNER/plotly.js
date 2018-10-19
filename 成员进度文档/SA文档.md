@@ -333,13 +333,13 @@ site during an international crisis).
 
 ​	Firstly, plotly supports users' customized graph types. Which means users can upload their own graph types(of course written in JavaScript). In fact, plotly.js comes with hundreds of types of graph congenitally, like Scientific graphs, revenue graphs, 3-D graphs.
 
-![img](https://upload-images.jianshu.io/upload_images/3605636-23c3bc06aae3da9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/554/format/webp)
+![img](images/PX1.png)
 
 ​                                               ****example: uploaded graph type by netizen ****
 
 
 
-![img](https://upload-images.jianshu.io/upload_images/3605636-9ef0db06f4be9550.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/554/format/webp)
+![img](images/PX2.png)
 
 ​                               ****Click on certain entities on customized graph we can see the source code ****
 
