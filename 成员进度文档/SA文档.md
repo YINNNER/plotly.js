@@ -156,9 +156,11 @@ Plotly.js is Plotly written in Javascript. Plotly has wrappers or written in oth
 
 ### context model
 
-![](../../../../../)
+![context_model](images/context_model.png)
 
-In figure1, the context model of Plotly.js is displayed. A short description of the most important entities in the diagram follows:
+Figure 2: The context view of Plotly.js
+
+In figure2, the context model of Plotly.js is displayed. A short description of the most important entities in the diagram follows:
 
 The project, a Javascript charting library, is mainly <u>used by</u> major companies like P&G, redhat, invesco, etc. When it comes to the programming language, Plotly,js, like its name, is almost all <u>written in</u> Javascript except some explanatory files and so on.
 
@@ -335,13 +337,13 @@ site during an international crisis).
 
 ![img](images/PX1.png)
 
-​                                               ****example: uploaded graph type by netizen ****
+​                                               ****Figure 3: example: uploaded graph type by netizen ****
 
 
 
 ![img](images/PX2.png)
 
-​                               ****Click on certain entities on customized graph we can see the source code ****
+​                               ****Figure 4: Click on certain entities on customized graph we can see the source code ****
 
 ​	So this feature dramatically increases the scalability of Plotly.js. It actually fosters a open source community for all netizen or programmers who are interested in visualization.
 
@@ -363,11 +365,33 @@ site during an international crisis).
 
 ## Technial debt
 
+This section focuses on the technical and testing debt present inside the Plotly.js project. The definition of technical debt according to Techopedia is: 
+
+> Technical debt is a concept in programming that reflects the extra development work that arises when code that is easy to implement in the short run is used instead of applying the best overall solution. [[7]](#7)
+
+To identify technical debt within Plotly.js, a wide range of options have been used. First, (static) code analysis tools are used to assess code quality. Afterwards manual inspection took place to examine the evolution of technical debt.
+
 ### SonarQube anlysis
 
-### Testing debt
+SonarQube is a platform for continuous software quality monitoring. This platform is able to analyse a large software project like Plotly.js in a matter of minutes. It provides the user with crucial insights about bugs, security and technical debt within the project. Since we failed to run sonar scanner in `\dist` folder which contains only distribution files that are too large and have many duplications, we ran the SonarQube analysis tool on the latest version of Plotly.js ([v1.41.3](https://github.com/plotly/plotly.js/releases/tag/v1.41.3)) except for `\dist` folder. And the result has given the following insights about technical debt. SonarQube reports a large amount of bugs (40), vulnerabilities (2) and code smells (99), ranging from refactor recommendations to limiting the large number of lines in a class to the amount of duplicated code (which represents only 6.0% of the entire code base). The issues ranged from severe (Blocker) to harmless (Info) and affected almost every part of the system. See overview produced by SonarQube in figure 5.
 
-### Debt evolution
+![sonar1](images/sonar.png)
+
+Figure 5: Overview produced by SonarQube of the Plotly.js project.
+
+The technical debt analysis however, provides a rather good insight into this phenomenon. SonarQube uses the SQALE methodology, which is a method to support the evaluation of source code independent of language or code analysis tools. It provides reliability overview and maintainability overview, which are useful to do technical debt analysis. 
+
+See figure 6 below, the circle size is often used as a metric to assess the number of bugs. It's easily to know that When there are more bugs in a file, it takes more reliability remediation effort. Since there are some files with a large amout of bugs, the general reliability rating is E, which means there is at least one blocker bug. This insight gives indication that developers working for plotly.js should spend some time to fix serious bugs. Then, see figure 7, the circle size is often used as a metric to assess the code smells. A code smell is any characteristic in the source code of a program that possibly indicates a deeper problem.[[8]](#8) We can see the majority of the files are rating A, and only one file's maintainability rating is E. This insight gives indication that developers working for plotly.js are highly focused on generating long-term, maintainable software.
+
+![reliability](images/reliability.png)
+
+Figure 6: Reliability Overview of Plotly.js project.
+
+![maintainability](images/maintainability.png)
+
+Figure 7: Maintainability Overview of Plotly.js project. 
+
+### Evolution of Technical Debt
 
 ## Conclusion
 
@@ -377,7 +401,8 @@ site during an international crisis).
 2. Plotly.js. https://plot.ly/javascript/, 2018.
 3. Nick Rozanski and Eoin Woods. Software Systems Architecture: Working with Stakeholders using Viewpoints and Perspectives. Addison-Wesley, 2012.
 4. Wikipedia.Plotly. https://en.wikipedia.org/wiki/Plotly, 2018.
-
 5. Github.Reat-plotly.js. https://github.com/plotly/react-plotly.js, 2018.
 6. Plotly JSON. https://help.plot.ly/json-chart-schema/, 2018.
+7. Technopedia. Technical debt. https://www.techopedia.com/definition/27913/technical- debt, 2017.
+8. Wikipedia.Code Smell. https://en.wikipedia.org/wiki/Code_smell#cite_note-:0-1, 2018.
 
