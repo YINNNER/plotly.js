@@ -55,11 +55,9 @@ Table 1: Summary most important stakeholders.
 
 - supported browser
 
-  <u>there is no clear identification of officially supported browsers, but the documentation recommends the usage of Chrome, Firefox and Safari. IE9 and above is also supported.</u>
+  <u>the documentation recommends the usage of Chrome, Firefox and Safari. IE9 and above is also supported.</u>
 
 - supported platform
-
-  <u>all platforms e.g. macOS, Windows, Linux.</u>
 
   <u>it's independent on platform since it's browser based.</u>
 
@@ -77,23 +75,23 @@ Table 1: Summary most important stakeholders.
 
 - competitors
 
-  - <u>D3.js![thumb_retina_ZtYnmL9U](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/thumb_retina_ZtYnmL9U.jpeg)</u>
-  - <u>Highcharts![thumb_retina_Vx4_Psj1](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/thumb_retina_Vx4_Psj1.png)</u>
-  - <u>Plottable.js![4dc5121e-a403-4d36-9aad-eb97339bb3f4](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/4dc5121e-a403-4d36-9aad-eb97339bb3f4.jpeg)</u>
+  - <u>D3.js</u>
+  - <u>Highcharts</u>
+  - <u>Plottable.js</u>
 
 - communication
 
-  - GitHub: issue
-  - twitter
-  - stack overflow
+  - <u>GitHub: issue</u>
+  - <u>twitter</u>
+  - <u>stack overflow</u>
 
 - documentation
 
-  Jekyll![logo-2x](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/logo-2x.png)
+  <u>Jekyll</u>
 
 - package management
 
-  npm
+  <u>npm</u>
 
 - code quality
 
@@ -103,17 +101,12 @@ Table 1: Summary most important stakeholders.
 
   - webpack
 
-    ![屏幕快照 2018-10-17 上午9.30.29](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-17%20%E4%B8%8A%E5%8D%889.30.29.png)
-
-  - browserify![79f0f736afc379314ae3062eefc4b74543a91129.jpg](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/79f0f736afc379314ae3062eefc4b74543a91129.jpg.png)
-
+  - browserify
   - Angular CLI
-
-    ![屏幕快照 2018-10-17 上午9.30.12](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-17%20%E4%B8%8A%E5%8D%889.30.12.png)
 
 - testing framework
 
-  - jasmine![68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667.svg)
+  - jasmine
   - Plotly image testing framework
 
 - continuous integration
@@ -122,23 +115,23 @@ Table 1: Summary most important stakeholders.
 
 - licensing & copyright
 
-  - code-MIT license![屏幕快照 2018-10-16 上午11.09.24](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-16%20%E4%B8%8A%E5%8D%8811.09.24.png)
-  - documentation-creative commons license![240px-Cc-by_new.svg](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/240px-Cc-by_new.svg.png)
+  - code-MIT license
+  - documentation-creative commons license
 
 - development
 
-  - alexcjohnson![2678795](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/2678795.jpeg)
-  - etpinard![6675409](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/6675409.jpeg)
-  - mikolalysenko![231686](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/231686.jpeg)
-  - dy![300067](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/300067.png)
-  - rreusser![572717](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/572717.jpeg)
+  - alexcjohnson
+  - etpinard
+  - mikolalysenko
+  - dy
+  - rreusser
 
 - user
 
-  - p&g ![8c1001e93901213f904730725ee736d12f2e9523.jpg](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/8c1001e93901213f904730725ee736d12f2e9523.jpg.png)
-  - redhat ![logo](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/logo.png)
-  - invesco ![屏幕快照 2018-10-16 下午11.52.34](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-16%20%E4%B8%8B%E5%8D%8811.52.34.png)
-  - alteryx![屏幕快照 2018-10-16 下午11.57.48](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-16%20%E4%B8%8B%E5%8D%8811.57.48.png)
+  - p&g 
+  - redhat 
+  - invesco 
+  - alteryx
 
 ## context view
 
@@ -164,7 +157,7 @@ In figure2, the context model of Plotly.js is displayed. A short description of 
 
 The project, a Javascript charting library, is mainly <u>used by</u> major companies like P&G, redhat, invesco, etc. When it comes to the programming language, Plotly,js, like its name, is almost all <u>written in</u> Javascript except some explanatory files and so on.
 
-As Plotly.js is a Javascript library, it can be applied to many <u>browsers</u> that support it. Although there is no clear identificaiton of officially supported browser, the documentation recommend the usage of Chrome, Firefox and Safari. IE9 and above is also supported. Since Plotly.js is browser-based, it can run on almost all <u>platforms</u>.
+As Plotly.js is a Javascript library, it can be applied to many <u>browsers</u> that support it. Although there is no clear identificaiton of officially supported browser, the documentation recommend the usage of Chrome, Firefox and Safari. IE9 and above is also supported. Plotly.js is built on D3.js and stack.gl, but there is no <u>dependencies</u> because Ploylt.js is an 'all-in-one' bundle with modules baked-in. But when you are using the Plotly.js testing framework, docker is needed. Since Plotly.js is browser-based, it can run on almost all <u>platforms</u>, like macOS, Windows, Linux and so on.
 
 As for the testing framework, Plotly.js provided several <u>testing</u> method.
 
