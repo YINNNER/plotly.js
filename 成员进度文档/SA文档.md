@@ -235,9 +235,11 @@ In the section on the development view, different modules of plotly.js is descri
 ### Standardization of Design
 
 ### Standardization of testing
-
+The standardization of testing helps to speed up the testing process and ensures a consistent result for each newly released product. Plotly uses the following standardization of testing:
+When a developer wants to contribute to Plotly, a pull-request should be made on GitHub.The developer will find the appropriate module and add the test to the test module, adding the corresponding test commands to the test script. After testing, the corresponding modules are adjusted. The software contains a large number of repeatable code blocks to make the structure clearer. When testing, it is necessary to clarify the scope of each code block and test the corresponding module again.Despite the tests written, there are still errors in the plotly project. Users feed back through official email and communication platforms, and developers retest and modify the problems reflected. Then update the software.
 ### Codeline organization
-
+The codeline organization is the way that the source code is stored in a directory structure,
+managed via configuration management and how it is built and tested regularly[9].In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
 ## Performance & Scalability Perspective
 
 | Desired Quality       | The ability of the system to predictably execute within its mandated performance profile and to handle increased processing volumes |
@@ -405,4 +407,5 @@ Figure 7: Maintainability Overview of Plotly.js project.
 6. Plotly JSON. https://help.plot.ly/json-chart-schema/, 2018.
 7. Technopedia. Technical debt. https://www.techopedia.com/definition/27913/technical- debt, 2017.
 8. Wikipedia.Code Smell. https://en.wikipedia.org/wiki/Code_smell#cite_note-:0-1, 2018.
-
+9.Nick Rozanski and Eoin Woods. Software Systems Architecture: Working with
+Stakeholders using Viewpoints and Perspectives. Addison-Wesley, 2012.
