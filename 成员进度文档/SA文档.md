@@ -12,11 +12,11 @@ Built on top of d3.js[[1]](#1) and stack.gl, plotly.js is a high-level, declarat
 
 - [Introduction](#Introduction)
 - [Stakeholders](#Stakeholders)
-- [Context View](#Context View)
-- [Functional View](#Functional View)
-- [Development View](#Development View)
-- [Performance & Scalability Perspective](#Performance & Scalability Perspective)
-- [Technial debt](#Technial debt)
+- [Context View](#Context-view)
+- [Functional View](#Functional-view)
+- [Development View](#Development-view)
+- [Performance & Scalability Perspective](#Performance--scalability-perspective)
+- [Technial debt](#Technial-debt)
 - [Conclusion](#Conclusion)
 - [References](#References)
 
