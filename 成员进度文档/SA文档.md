@@ -12,11 +12,11 @@ Built on top of d3.js[[1]](#1) and stack.gl, plotly.js is a high-level, declarat
 
 - [Introduction](#Introduction)
 - [Stakeholders](#Stakeholders)
-- [Context View](#Context-view)
-- [Functional View](#Functional-view)
-- [Development View](#Development-view)
-- [Performance & Scalability Perspective](#Performance--scalability-perspective)
-- [Technial debt](#Technial-debt)
+- [Context View](#Context View)
+- [Functional View](#Functional View)
+- [Development View](#Development View)
+- [Performance & Scalability Perspective](#Performance & Scalability Perspective)
+- [Technial debt](#Technial debt)
 - [Conclusion](#Conclusion)
 - [References](#References)
 
@@ -49,134 +49,85 @@ Table 1: Summary most important stakeholders.
 
 ## Context View
 
-- programming language
-
-  <u>javascript</u>
-
-- supported browser
-
-  <u>the documentation recommends the usage of Chrome, Firefox and Safari. IE9 and above is also supported.</u>
-
-- supported platform
-
-  <u>it's independent on platform since it's browser based.</u>
-
-- version control & issue tracking
-
-  <u>GitHub</u>
-
-- dependencies
-
-  <u>Plotly is built on D3.js and stack.gl.</u>
-
-  <u>But there is no dependecies because Plotly is an 'all-in-one' bundle with modules baked-in.</u>
-
-  <u>But when you're using Plotly image testing framework, docker is needed.</u>
-
-- competitors
-
-  - <u>D3.js</u>
-  - <u>Highcharts</u>
-  - <u>Plottable.js</u>
-
-- communication
-
-  - <u>GitHub: issue</u>
-  - <u>twitter</u>
-  - <u>stack overflow</u>
-
-- documentation
-
-  <u>Jekyll</u>
-
-- package management
-
-  <u>npm</u>
-
-- code quality
-
-  ???
-
-- building framework
-
-  - webpack
-
-  - browserify
-  - Angular CLI
-
-- testing framework
-
-  - jasmine
-  - Plotly image testing framework
-
-- continuous integration
-
-  CircleCI
-
-- licensing & copyright
-
-  - code-MIT license
-  - documentation-creative commons license
-
-- development
-
-  - alexcjohnson
-  - etpinard
-  - mikolalysenko
-  - dy
-  - rreusser
-
-- user
-
-  - p&g 
-  - redhat 
-  - invesco 
-  - alteryx
-
-## context view
-
 In this section, the context viewpoint Plotly.js is described. The context view describe and visualises the relationship and interactions between Plotly.js with the environment.
 
-### system scope
+### System Scope & Responsibilities
 
-according to the Plotly.js foundation, the Plotly.js is
+According to the [Plotly.js foundation](https://plot.ly/javascript/), the Plotly.js is
 
-> Built on top of [d3.js](http://d3js.org/) and [stack.gl](http://stack.gl/), plotly.js is a high-level, declarative charting library. plotly.js ships with over 30 chart types, including scientific charts, 3D graphs, statistical charts, SVG maps, financial charts, and more.
+> Built on top of [D3.js](http://d3js.org/) and [stack.gl](http://stack.gl/), plotly.js is a high-level, declarative charting library. plotly.js ships with over 30 chart types, including scientific charts, 3D graphs, statistical charts, SVG maps, financial charts, and more.
 
 The Plotly.js is used to create sophisticated, interactive charts in JavaScript for finance, engineering, and the sciences; the targeted audience is the major companies in science, engineering and finance.
 
+It is declared in the official website of Plotly.js that Plotly.js ensures the following features:
+
+> - Sophiscated Chart Types
+> - Fully Customizable
+> - High Performance
+> - Fully Interactive
+> - Universal
+
+To conclude, as a interactive Javascript Graphing Library, Plotly.js has the following responsibilities:
+
+- **Interactive**: `Plotly.js` charts are shipped with zoom, pan, hover, and click interactions. Click-and-drag to zoom into a region, double-click to autoscale, click on legend items to toggle traces. All of these events are also [exposed in the API](https://plot.ly/javascript/#chart-events).
+- **Customizable**:  ```Plotly.js``` charts are described declaratively as JSON objects. Every aspect of the charts, such as colors, grid lines, and the legend, has a corresponding set of JSON attributes.
+- **Universal**: By abstracting charts to a declarative JSON structure, `plotly.js` is used as a browser-based charting library for [Python](https://plot.ly/python/), [R](https://plot.ly/r/), [MATLAB](https://plot.ly/matlab/).
+- **High Performance**: ```Plotly.js```uses stack.gl for high performance 2D and 3D charts. All 3D charts in `plotly.js` are rendered with [WebGL](https://www.khronos.org/registry/webgl/), leveraging the power of the GPU for fast interactivity.
+
 Plotly.js is Plotly written in Javascript. Plotly has wrappers or written in other languages like R and Python.
 
-### context model
+### External Entities
 
-![context_model](images/context_model.png)
+![context_model](/Users/EvanChoo/Downloads/images/context_model.png)
 
-Figure 2: The context view of Plotly.js
+*Figure 2: The context model of Plotly.js*
 
-In figure2, the context model of Plotly.js is displayed. A short description of the most important entities in the diagram follows:
+In figure2, the context model of Plotly.js is displayed. It shows the external entities and their relationships. A short description of the most important entities in the diagram follows:
 
-The project, a Javascript charting library, is mainly <u>used by</u> major companies like P&G, redhat, invesco, etc. When it comes to the programming language, Plotly,js, like its name, is almost all <u>written in</u> Javascript except some explanatory files and so on.
+The project, a Javascript charting library, is mainly <u>used by</u> major companies like [P&G](https://us.pg.com/), [RedHat](https://www.redhat.com/en), [Invesco](www.invesco.com/), [Alteryx](https://www.alteryx.com), etc. When it comes to the programming language, Plotly,js, like its name, is almost all <u>written in</u> Javascript except some explanatory files and so on.
 
-As Plotly.js is a Javascript library, it can be applied to many <u>browsers</u> that support it. Although there is no clear identificaiton of officially supported browser, the documentation recommend the usage of Chrome, Firefox and Safari. IE9 and above is also supported. Plotly.js is built on D3.js and stack.gl, but there is no <u>dependencies</u> because Ploylt.js is an 'all-in-one' bundle with modules baked-in. But when you are using the Plotly.js testing framework, docker is needed. Since Plotly.js is browser-based, it can run on almost all <u>platforms</u>, like macOS, Windows, Linux and so on.
+As Plotly.js is a Javascript library, it can be applied to many <u>browsers</u> that support it. Although there is no clear identificaiton of officially supported browser, the documentation recommend the usage of Chrome, Firefox and Safari. IE9 and above is also supported. Plotly.js is built on [D3.js](https://d3js.org/) and [stack.gl](https://github.com/stackgl), but there is no <u>dependencies</u> because Ploylt.js is an 'all-in-one' bundle with modules baked-in. But when you are using the Plotly.js testing framework, [Docker](https://www.docker.com/) is needed. Since Plotly.js is browser-based, it can run on almost all <u>platforms</u>, like macOS, Windows, Linux and so on.
 
 As for the testing framework, Plotly.js provided several <u>testing</u> method.
 
-- Jasmine test: It is run in a browser using karma.
-- Image pixel comparision test/Plotly image testing framework: It's run in a docker container.
+- [Jasmine](https://jasmine.github.io/) test: It is run in a browser using karma.
+- [Image pixel comparision test/Plotly image testing framework](https://github.com/plotly/dash-image-processing): It's run in a docker container.
 
-Both Jasmine testing framework and Plotly image testing framework are run on **CircleCI** on every push for <u>continuous integration</u>. However, the documentation hasn't specified which <u>code quality</u> tool they use to inspect the code quality.
+Both Jasmine testing framework and Plotly image testing framework are run on CircleCI on every push for <u>continuous integration</u>. However, the documentation hasn't specified which <u>code quality</u> tool they use to inspect the code quality.
 
-To build Plotly.js, you can currently use Webpack, Browserify and Angular CLI.
+To build Plotly.js, you can currently use [Webpack](https://webpack.js.org/), [Browserify](browserify.org/) and [Angular CLI](https://cli.angular.io/).
 
-As the documentation of Plotly.js states, it's based on D3.js and stack.gl. However, there is no <u>dependecies</u> since Plotly.js is an 'all-in-one' bundle with all modules baked-in. But when you're testing Plotly.js using Jasmine or Plotly image testing framework for example, Jasmine or Docker is needed. You can install Plotly.js using <u>package managers</u> like npm or use the Plotly.js CDN hosted by Fastly.
+As the documentation of Plotly.js states, it's based on D3.js and stack.gl. However, there is no <u>dependecies</u> since Plotly.js is an 'all-in-one' bundle with all modules baked-in. But when you're testing Plotly.js using Jasmine or Plotly image testing framework for example, Jasmine or Docker is needed. You can install Plotly.js using <u>package managers</u> like [npm](https://www.npmjs.com/) or use the Plotly.js CDN hosted by [Fastly](https://www.fastly.com/).
 
-Plotly.js was instigated by Dr. Alex Johnson(alexcjohnson on GitHub) and has been in <u>development</u> for over 3 years. There are also other people contributing to this project like etpinard, mikolalysenko, dy, rreusser and other GitHub community.
+Plotly.js was instigated by [@Dr. Alex Johnson](https://github.com/alexcjohnson) and has been in <u>development</u> for over 3 years. There are also other people contributing to this project like  [@Étienne Tétreault-Pinard](https://github.com/etpinard), [@Mikola Lysenko](https://github.com/mikolalysenko), [@Dmitry Yv](https://github.com/dy), [@Ricky Reusser](https://github.com/rreusser) and other GitHub community.
 
-As far as the <u>documentation</u> goes, it's generated and maintained by Plotly doucmentation repositoty built with Jekyll, and hosted on GitHub pages.
+As far as the <u>documentation</u> goes, it's generated and maintained by Plotly doucmentation repositoty built with [Jekyll](https://jekyllrb.com/), and hosted on [GitHub Pages](https://pages.github.com/).
 
 The competiton between Javascript charting library is fierce and Plotly.js is among the top ladder. Its <u>competitors</u> includes D3.js which has long history, Highcharts, Plottable.js and so on.
 
 Furthermore, we also want to mention the <u>license</u> of Plotly.js. The code is released under the MIT license while the <u>copyright</u> fo the code belongs to the respective authors, and the documentation is released under the Creative Common license.
+
+**To conclude the discription above**, a table can be drawn below:
+
+| External Entity Name             | Content                                                      |
+| -------------------------------- | ------------------------------------------------------------ |
+| Programming Language             | Javascript                                                   |
+| Supported Browser                | Chrome, FireFox, Safari, IE9 and above                       |
+| Supported Platform               | All platforms (e.g. macOS, Windows, Linux)                   |
+| Version Control & Issue Tracking | GitHub                                                       |
+| Dependencies                     | Docker                                                       |
+| Competitors                      | D3.js, Highcharts, Plottable.js                              |
+| Communication                    | GitHub: issue, Twitter,  StackOverflow                       |
+| Documentation                    | Jekyll                                                       |
+| Package Management               | npm                                                          |
+| Building Framework               | Webpack, Browserify, Angular CLI                             |
+| Testing Framework                | Jasmine, Plotly Image Testing Framework                      |
+| Continuous Integration           | CircleCI                                                     |
+| Licensing & Copyright            | Code: MIT License, Documentation: Creative Common License    |
+| Development                      | [@Alex Johnson](https://github.com/alexcjohnson), [@Étienne Tétreault-Pinard](https://github.com/etpinard), [@Mikola Lysenko](https://github.com/mikolalysenko), [@Dmitry Yv](https://github.com/dy), [@Ricky Reusser](https://github.com/rreusser) |
+| User                             | [P&G](https://us.pg.com/), [RedHat](https://www.redhat.com/en), [Invesco](www.invesco.com/), [Alteryx](https://www.alteryx.com) |
+
+
 
 ## Functional View
 
@@ -201,7 +152,7 @@ Functional capabilities define what the system is required to do and whate it is
 | Custom chart events | Users can use Plotly.js to do custom chat events like click events, hover events, zoom events and disable zoom events. |
 | Animations          | Users can use Plotly.js to do many animations like baisic animations, adding sliders to animations, filled-area animation and map animation. |
 
-![plotly.js JavaScript Graphing Library](images/plotly.js_JavaScript_Graphing_Library.png)
+![plotly.js JavaScript Graphing Library](images/plotly.js JavaScript Graphing Library.png)
 
 ### External interfaces
 
@@ -228,7 +179,7 @@ This particular view highlights the concerns and interests of the developers and
 
 The plotly.js source code is organized into several modules that encapsulates a coherent piece of functionality. Plotly.js modules are partitioned into three main categories as can be seen below. These modules are organized in different abstraction layers where the top layer depends on the layers below it.
 
-![img](images/module_organization.png)
+![img](images/stack.png)
 
 The **core** module comprises the core Plotly.js functionality for implementing 2D/3D plotting. The main functional components as described in the Functional View is implemented here. Most of the components like 2D annotations and 3D annotations are implemented inside the Component module. Some other important functionality are encapsulated into several other modules: fonts manipulation in fonts module; operations for plotting in plots module; gragh transformation in transforms module.
 
@@ -246,10 +197,8 @@ Plotly.js is a communityeffort which is developed through [GitHub](https://www.g
 The standardization of testing helps to speed up the testing process and ensures a consistent result for each newly released product. Plotly uses the following standardization of testing:
 When a developer wants to contribute to Plotly, a pull-request should be made on GitHub.The developer will find the appropriate module and add the test to the test module, adding the corresponding test commands to the test script. After testing, the corresponding modules are adjusted. The software contains a large number of repeatable code blocks to make the structure clearer. When testing, it is necessary to clarify the scope of each code block and test the corresponding module again.Despite the tests written, there are still errors in the plotly project. Users feed back through official email and communication platforms, and developers retest and modify the problems reflected. Then update the software.
 ### Codeline organization
-
 The codeline organization is the way that the source code is stored in a directory structure,
-managed via configuration management and how it is built and tested regularly[[3]](#3).In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
-
+managed via configuration management and how it is built and tested regularly[9].In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
 ## Performance & Scalability Perspective
 
 | Desired Quality       | The ability of the system to predictably execute within its mandated performance profile and to handle increased processing volumes |
@@ -260,7 +209,7 @@ managed via configuration management and how it is built and tested regularly[[3
 | Architectural Tactics | Optimize repeated processing, reduce contention via replication, prioritize processing, consolidate related workloads, distribute processing over time, minimize the use of shared resources, partition and parallelize, use asynchronous processing, and make design compromises |
 | Problems and Pitfalls | Imprecise performance and scalability goals, unrealistic models, use of simple measures for complex cases, inappropriate partitioning, invalid environment and platform assumptions, too much indirection, concurrency-related contention, careless allocation of resources, and disregard for network and in-process invocation differences |
 
-​	It's true that with the development of Internet and society, people rely heavier on software than ever before. Meanwhile, as the number of software users has been increasing dramatically, the concern of performance and scalability of certain software especially the software with a large number of users has been raised among a lot people.
+ 	It's true that with the development of Internet and society, people rely heavier on software than ever before. Meanwhile, as the number of software users has been increasing dramatically, the concern of performance and scalability of certain software especially the software with a large number of users has been raised among a lot people.
 
 ​	This chapter discusses two related quality properties for large information systems: performance and scalability. These properties are important because, in large systems, they can cause more unexpected, complex, and expensive problems late in the system lifecycle than most of the other properties combined.
 
@@ -349,13 +298,13 @@ site during an international crisis).
 
 ![img](images/PX1.png)
 
-​                                               *Figure 3: example: uploaded graph type by netizen*
+​                                               ****Figure 3: example: uploaded graph type by netizen ****
 
 
 
 ![img](images/PX2.png)
 
-​                               *Figure 4: Click on certain entities on customized graph we can see the source code*
+​                               ****Figure 4: Click on certain entities on customized graph we can see the source code ****
 
 ​	So this feature dramatically increases the scalability of Plotly.js. It actually fosters a open source community for all netizen or programmers who are interested in visualization.
 
@@ -417,3 +366,5 @@ Figure 7: Maintainability Overview of Plotly.js project.
 6. Plotly JSON. https://help.plot.ly/json-chart-schema/, 2018.
 7. Technopedia. Technical debt. https://www.techopedia.com/definition/27913/technical- debt, 2017.
 8. Wikipedia.Code Smell. https://en.wikipedia.org/wiki/Code_smell#cite_note-:0-1, 2018.
+9.Nick Rozanski and Eoin Woods. Software Systems Architecture: Working with
+Stakeholders using Viewpoints and Perspectives. Addison-Wesley, 2012.
