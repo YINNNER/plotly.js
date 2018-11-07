@@ -15,16 +15,16 @@ Built on top of d3.js[[1]](#1) and stack.gl, plotly.js is a high-level, declarat
 - [Context View](#Context View)
 - [Functional View](#Functional View)
 - [Development View](#Development View)
-- [Evolution Perspective](#Evolution Perspective)
+- [Performance & Scalability Perspective](#Performance & Scalability Perspective)
 - [Technial debt](#Technial debt)
 - [Conclusion](#Conclusion)
-- [Reference](#Reference)
+- [References](#References)
 
 ## Introduction
 
 As we enter the era of big data, data analysis and data visualization technologies become particularly important. This increase demands an easy-to-use softeware to create sophisticated, interactive charts. Plotly is a technical computing company headquartered in Montreal, Quebec, that develops online data analytics and visualization tools. Plotly provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries for Python, R, MATLAB, Perl, JavaScript, Julia, Arduino, and REST[[3]](#3). As shown in Figure 1, Plotly offers a wide range of wonderful products of data analytics and visualization in different languages.
 
-![屏幕快照 2018-10-10 16.29.24](images/屏幕快照 2018-10-10 16.29.24.png)
+![introduction](images/plotly_introduction.png)
 
 *Figure 1: Products of Plotly*
 
@@ -47,7 +47,7 @@ Table 1: Summary most important stakeholders.
 | Suppliers     | Partners who provide all kinds of hardware and software      |
 | Maintainers   | Software solutions are assessed by the Software development team in order to maintain the programming standards and architectural choices. |
 
-## Context view
+## Context View
 
 - programming language
 
