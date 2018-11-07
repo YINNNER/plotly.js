@@ -222,10 +222,25 @@ In the section on the development view, different modules of plotly.js is descri
 ==待定==
 
 ## Development View
+This particular view highlights the concerns and interests of the developers and testers of the project. The different modules in the project have been identified, the file structure has been researched and important standardizations of processes are discussed.
 
-### Module Organization
+### Modules organization
+
+The plotly.js source code is organized into several modules that encapsulates a coherent piece of functionality. Plotly.js modules are partitioned into three main categories as can be seen below. These modules are organized in different abstraction layers where the top layer depends on the layers below it.
+
+![img](images/stack.png)
+
+The **core** module comprises the core Plotly.js functionality for implementing 2D/3D plotting. The main functional components as described in the Functional View is implemented here. Most of the components like 2D annotations and 3D annotations are implemented inside the Component module. Some other important functionality are encapsulated into several other modules: fonts manipulation in fonts module; operations for plotting in plots module; gragh transformation in transforms module.
+
+The **toolkit** module is a upper-layer module based on the core module. There are currently two major projects in this module: plot which provides overall 2 dimensional plotting operations, annotations, graphs, etc. and
+plot3D which provides pseudo-3D plotting to Plotly.js.
+
+The **platform** module consists of supporting modules from external parties such as the basic Javascript language libraries and some basic plot js files.
+
+The diagram above can be considered as an oversimplification as the connections between modules are much more complex.
 
 ### Standardization of Design
+Plotly.js is a communityeffort which is developed through [GitHub](https://www.github.com). Development standards are communicated through their [Contributing guideline](https://github.com/plotly/plotly.js/blob/master/CONTRIBUTING.md).
 
 ### Standardization of testing
 The standardization of testing helps to speed up the testing process and ensures a consistent result for each newly released product. Plotly uses the following standardization of testing:
