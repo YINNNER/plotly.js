@@ -78,7 +78,7 @@ Plotly.js is Plotly written in Javascript. Plotly has wrappers or written in oth
 
 ### External Entities
 
-![context_model](/Users/EvanChoo/Downloads/images/context_model.png)
+![context_model](images/context_model.png)
 
 *Figure 2: The context model of Plotly.js*
 
@@ -127,8 +127,6 @@ Furthermore, we also want to mention the <u>license</u> of Plotly.js. The code i
 | Development                      | [@Alex Johnson](https://github.com/alexcjohnson), [@Étienne Tétreault-Pinard](https://github.com/etpinard), [@Mikola Lysenko](https://github.com/mikolalysenko), [@Dmitry Yv](https://github.com/dy), [@Ricky Reusser](https://github.com/rreusser) |
 | User                             | [P&G](https://us.pg.com/), [RedHat](https://www.redhat.com/en), [Invesco](www.invesco.com/), [Alteryx](https://www.alteryx.com) |
 
-
-
 ## Functional View
 
 According to Rozanski and Wood's book [[3]](#3),
@@ -152,7 +150,7 @@ Functional capabilities define what the system is required to do and whate it is
 | Custom chart events | Users can use Plotly.js to do custom chat events like click events, hover events, zoom events and disable zoom events. |
 | Animations          | Users can use Plotly.js to do many animations like baisic animations, adding sliders to animations, filled-area animation and map animation. |
 
-![plotly.js JavaScript Graphing Library](images/plotly.js JavaScript Graphing Library.png)
+![plotly.js JavaScript Graphing Library](images/plotly.js_JavaScript_Graphing_Library.png)
 
 *Figure 2: All types of charts that Plotly.js can create.*
 
@@ -181,7 +179,7 @@ This particular view highlights the concerns and interests of the developers and
 
 The plotly.js source code is organized into several modules that encapsulates a coherent piece of functionality. Plotly.js modules are partitioned into three main categories as can be seen below. These modules are organized in different abstraction layers where the top layer depends on the layers below it.
 
-![img](images/stack.png)
+![img](images/module_organization.png)
 
 The **core** module comprises the core Plotly.js functionality for implementing 2D/3D plotting. The main functional components as described in the Functional View is implemented here. Most of the components like 2D annotations and 3D annotations are implemented inside the Component module. Some other important functionality are encapsulated into several other modules: fonts manipulation in fonts module; operations for plotting in plots module; gragh transformation in transforms module.
 
@@ -301,13 +299,13 @@ site during an international crisis).
 
 ![img](images/PX1.png)
 
-​                                               ****Figure 3: example: uploaded graph type by netizen ****
+​                                               *Figure 3: example: uploaded graph type by netizen*
 
 
 
 ![img](images/PX2.png)
 
-​                               ****Figure 4: Click on certain entities on customized graph we can see the source code ****
+​                               *Figure 4: Click on certain entities on customized graph we can see the source code*
 
 ​	So this feature dramatically increases the scalability of Plotly.js. It actually fosters a open source community for all netizen or programmers who are interested in visualization.
 
@@ -349,11 +347,11 @@ See figure 6 below, the circle size is often used as a metric to assess the numb
 
 ![reliability](images/reliability.png)
 
-Figure 6: Reliability Overview of Plotly.js project.
+*Figure 6: Reliability Overview of Plotly.js project.*
 
 ![maintainability](images/maintainability.png)
 
-Figure 7: Maintainability Overview of Plotly.js project. 
+*Figure 7: Maintainability Overview of Plotly.js project.* 
 
 ### Evolution of Technical Debt
 
@@ -369,5 +367,3 @@ Figure 7: Maintainability Overview of Plotly.js project.
 6. Plotly JSON. https://help.plot.ly/json-chart-schema/, 2018.
 7. Technopedia. Technical debt. https://www.techopedia.com/definition/27913/technical- debt, 2017.
 8. Wikipedia.Code Smell. https://en.wikipedia.org/wiki/Code_smell#cite_note-:0-1, 2018.
-9.Nick Rozanski and Eoin Woods. Software Systems Architecture: Working with
-Stakeholders using Viewpoints and Perspectives. Addison-Wesley, 2012.
