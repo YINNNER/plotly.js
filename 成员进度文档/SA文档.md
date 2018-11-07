@@ -201,7 +201,7 @@ Functional capabilities define what the system is required to do and whate it is
 | Custom chart events | Users can use Plotly.js to do custom chat events like click events, hover events, zoom events and disable zoom events. |
 | Animations          | Users can use Plotly.js to do many animations like baisic animations, adding sliders to animations, filled-area animation and map animation. |
 
-![plotly.js JavaScript Graphing Library](images/plotly.js JavaScript Graphing Library.png)
+![plotly.js JavaScript Graphing Library](images/plotly.js_JavaScript_Graphing_Library.png)
 
 ### External interfaces
 
@@ -228,7 +228,7 @@ This particular view highlights the concerns and interests of the developers and
 
 The plotly.js source code is organized into several modules that encapsulates a coherent piece of functionality. Plotly.js modules are partitioned into three main categories as can be seen below. These modules are organized in different abstraction layers where the top layer depends on the layers below it.
 
-![img](images/stack.png)
+![img](images/module_organization.png)
 
 The **core** module comprises the core Plotly.js functionality for implementing 2D/3D plotting. The main functional components as described in the Functional View is implemented here. Most of the components like 2D annotations and 3D annotations are implemented inside the Component module. Some other important functionality are encapsulated into several other modules: fonts manipulation in fonts module; operations for plotting in plots module; gragh transformation in transforms module.
 
@@ -246,8 +246,10 @@ Plotly.js is a communityeffort which is developed through [GitHub](https://www.g
 The standardization of testing helps to speed up the testing process and ensures a consistent result for each newly released product. Plotly uses the following standardization of testing:
 When a developer wants to contribute to Plotly, a pull-request should be made on GitHub.The developer will find the appropriate module and add the test to the test module, adding the corresponding test commands to the test script. After testing, the corresponding modules are adjusted. The software contains a large number of repeatable code blocks to make the structure clearer. When testing, it is necessary to clarify the scope of each code block and test the corresponding module again.Despite the tests written, there are still errors in the plotly project. Users feed back through official email and communication platforms, and developers retest and modify the problems reflected. Then update the software.
 ### Codeline organization
+
 The codeline organization is the way that the source code is stored in a directory structure,
-managed via configuration management and how it is built and tested regularly[9].In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
+managed via configuration management and how it is built and tested regularly[[3]](#3).In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
+
 ## Performance & Scalability Perspective
 
 | Desired Quality       | The ability of the system to predictably execute within its mandated performance profile and to handle increased processing volumes |
@@ -415,5 +417,3 @@ Figure 7: Maintainability Overview of Plotly.js project.
 6. Plotly JSON. https://help.plot.ly/json-chart-schema/, 2018.
 7. Technopedia. Technical debt. https://www.techopedia.com/definition/27913/technical- debt, 2017.
 8. Wikipedia.Code Smell. https://en.wikipedia.org/wiki/Code_smell#cite_note-:0-1, 2018.
-9.Nick Rozanski and Eoin Woods. Software Systems Architecture: Working with
-Stakeholders using Viewpoints and Perspectives. Addison-Wesley, 2012.
