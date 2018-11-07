@@ -55,11 +55,9 @@ Table 1: Summary most important stakeholders.
 
 - supported browser
 
-  <u>there is no clear identification of officially supported browsers, but the documentation recommends the usage of Chrome, Firefox and Safari. IE9 and above is also supported.</u>
+  <u>the documentation recommends the usage of Chrome, Firefox and Safari. IE9 and above is also supported.</u>
 
 - supported platform
-
-  <u>all platforms e.g. macOS, Windows, Linux.</u>
 
   <u>it's independent on platform since it's browser based.</u>
 
@@ -77,23 +75,23 @@ Table 1: Summary most important stakeholders.
 
 - competitors
 
-  - <u>D3.js![thumb_retina_ZtYnmL9U](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/thumb_retina_ZtYnmL9U.jpeg)</u>
-  - <u>Highcharts![thumb_retina_Vx4_Psj1](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/thumb_retina_Vx4_Psj1.png)</u>
-  - <u>Plottable.js![4dc5121e-a403-4d36-9aad-eb97339bb3f4](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/4dc5121e-a403-4d36-9aad-eb97339bb3f4.jpeg)</u>
+  - <u>D3.js</u>
+  - <u>Highcharts</u>
+  - <u>Plottable.js</u>
 
 - communication
 
-  - GitHub: issue
-  - twitter
-  - stack overflow
+  - <u>GitHub: issue</u>
+  - <u>twitter</u>
+  - <u>stack overflow</u>
 
 - documentation
 
-  Jekyll![logo-2x](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/logo-2x.png)
+  <u>Jekyll</u>
 
 - package management
 
-  npm
+  <u>npm</u>
 
 - code quality
 
@@ -103,17 +101,12 @@ Table 1: Summary most important stakeholders.
 
   - webpack
 
-    ![屏幕快照 2018-10-17 上午9.30.29](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-17%20%E4%B8%8A%E5%8D%889.30.29.png)
-
-  - browserify![79f0f736afc379314ae3062eefc4b74543a91129.jpg](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/79f0f736afc379314ae3062eefc4b74543a91129.jpg.png)
-
+  - browserify
   - Angular CLI
-
-    ![屏幕快照 2018-10-17 上午9.30.12](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-17%20%E4%B8%8A%E5%8D%889.30.12.png)
 
 - testing framework
 
-  - jasmine![68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667.svg)
+  - jasmine
   - Plotly image testing framework
 
 - continuous integration
@@ -122,23 +115,23 @@ Table 1: Summary most important stakeholders.
 
 - licensing & copyright
 
-  - code-MIT license![屏幕快照 2018-10-16 上午11.09.24](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-16%20%E4%B8%8A%E5%8D%8811.09.24.png)
-  - documentation-creative commons license![240px-Cc-by_new.svg](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/240px-Cc-by_new.svg.png)
+  - code-MIT license
+  - documentation-creative commons license
 
 - development
 
-  - alexcjohnson![2678795](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/2678795.jpeg)
-  - etpinard![6675409](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/6675409.jpeg)
-  - mikolalysenko![231686](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/231686.jpeg)
-  - dy![300067](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/300067.png)
-  - rreusser![572717](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/572717.jpeg)
+  - alexcjohnson
+  - etpinard
+  - mikolalysenko
+  - dy
+  - rreusser
 
 - user
 
-  - p&g ![8c1001e93901213f904730725ee736d12f2e9523.jpg](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/8c1001e93901213f904730725ee736d12f2e9523.jpg.png)
-  - redhat ![logo](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/logo.png)
-  - invesco ![屏幕快照 2018-10-16 下午11.52.34](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-16%20%E4%B8%8B%E5%8D%8811.52.34.png)
-  - alteryx![屏幕快照 2018-10-16 下午11.57.48](../%E6%88%90%E5%91%98%E8%BF%9B%E5%BA%A6%E6%96%87%E6%A1%A3/ContextView/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-16%20%E4%B8%8B%E5%8D%8811.57.48.png)
+  - p&g 
+  - redhat 
+  - invesco 
+  - alteryx
 
 ## context view
 
@@ -164,7 +157,7 @@ In figure2, the context model of Plotly.js is displayed. A short description of 
 
 The project, a Javascript charting library, is mainly <u>used by</u> major companies like P&G, redhat, invesco, etc. When it comes to the programming language, Plotly,js, like its name, is almost all <u>written in</u> Javascript except some explanatory files and so on.
 
-As Plotly.js is a Javascript library, it can be applied to many <u>browsers</u> that support it. Although there is no clear identificaiton of officially supported browser, the documentation recommend the usage of Chrome, Firefox and Safari. IE9 and above is also supported. Since Plotly.js is browser-based, it can run on almost all <u>platforms</u>.
+As Plotly.js is a Javascript library, it can be applied to many <u>browsers</u> that support it. Although there is no clear identificaiton of officially supported browser, the documentation recommend the usage of Chrome, Firefox and Safari. IE9 and above is also supported. Plotly.js is built on D3.js and stack.gl, but there is no <u>dependencies</u> because Ploylt.js is an 'all-in-one' bundle with modules baked-in. But when you are using the Plotly.js testing framework, docker is needed. Since Plotly.js is browser-based, it can run on almost all <u>platforms</u>, like macOS, Windows, Linux and so on.
 
 As for the testing framework, Plotly.js provided several <u>testing</u> method.
 
@@ -229,15 +222,32 @@ In the section on the development view, different modules of plotly.js is descri
 ==待定==
 
 ## Development View
+This particular view highlights the concerns and interests of the developers and testers of the project. The different modules in the project have been identified, the file structure has been researched and important standardizations of processes are discussed.
 
-### Module Organization
+### Modules organization
+
+The plotly.js source code is organized into several modules that encapsulates a coherent piece of functionality. Plotly.js modules are partitioned into three main categories as can be seen below. These modules are organized in different abstraction layers where the top layer depends on the layers below it.
+
+![img](images/stack.png)
+
+The **core** module comprises the core Plotly.js functionality for implementing 2D/3D plotting. The main functional components as described in the Functional View is implemented here. Most of the components like 2D annotations and 3D annotations are implemented inside the Component module. Some other important functionality are encapsulated into several other modules: fonts manipulation in fonts module; operations for plotting in plots module; gragh transformation in transforms module.
+
+The **toolkit** module is a upper-layer module based on the core module. There are currently two major projects in this module: plot which provides overall 2 dimensional plotting operations, annotations, graphs, etc. and
+plot3D which provides pseudo-3D plotting to Plotly.js.
+
+The **platform** module consists of supporting modules from external parties such as the basic Javascript language libraries and some basic plot js files.
+
+The diagram above can be considered as an oversimplification as the connections between modules are much more complex.
 
 ### Standardization of Design
+Plotly.js is a communityeffort which is developed through [GitHub](https://www.github.com). Development standards are communicated through their [Contributing guideline](https://github.com/plotly/plotly.js/blob/master/CONTRIBUTING.md).
 
 ### Standardization of testing
-
+The standardization of testing helps to speed up the testing process and ensures a consistent result for each newly released product. Plotly uses the following standardization of testing:
+When a developer wants to contribute to Plotly, a pull-request should be made on GitHub.The developer will find the appropriate module and add the test to the test module, adding the corresponding test commands to the test script. After testing, the corresponding modules are adjusted. The software contains a large number of repeatable code blocks to make the structure clearer. When testing, it is necessary to clarify the scope of each code block and test the corresponding module again.Despite the tests written, there are still errors in the plotly project. Users feed back through official email and communication platforms, and developers retest and modify the problems reflected. Then update the software.
 ### Codeline organization
-
+The codeline organization is the way that the source code is stored in a directory structure,
+managed via configuration management and how it is built and tested regularly[9].In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
 ## Performance & Scalability Perspective
 
 | Desired Quality       | The ability of the system to predictably execute within its mandated performance profile and to handle increased processing volumes |
@@ -405,4 +415,5 @@ Figure 7: Maintainability Overview of Plotly.js project.
 6. Plotly JSON. https://help.plot.ly/json-chart-schema/, 2018.
 7. Technopedia. Technical debt. https://www.techopedia.com/definition/27913/technical- debt, 2017.
 8. Wikipedia.Code Smell. https://en.wikipedia.org/wiki/Code_smell#cite_note-:0-1, 2018.
-
+9.Nick Rozanski and Eoin Woods. Software Systems Architecture: Working with
+Stakeholders using Viewpoints and Perspectives. Addison-Wesley, 2012.
