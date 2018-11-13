@@ -226,6 +226,7 @@ When a developer wants to contribute to Plotly, a pull-request should be made on
 
 ### Codeline organization
 The codeline organization is the way that the source code is stored in a directory structure, managed via configuration management and how it is built and tested regularly [[3]](#3).In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
+![code_organization](images/code_orgnization.png)
 ## Performance & Scalability Perspective
 
 | Desired Quality       | The ability of the system to predictably execute within its mandated performance profile and to handle increased processing volumes |
