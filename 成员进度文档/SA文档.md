@@ -353,11 +353,13 @@ site during an international crisis).
 
 ## Technial debt
 
+After understanding the overall architecture of Plotly.js, we now take a deeper look at the current Plotly.js source code along with the recent changes made to the source code to indentitfy what features have been added or removed and how the technical debt is changing. To accomplish this, we used static code analysis as well as manual code inspection.
+
 This section focuses on the technical and testing debt present inside the Plotly.js project. The definition of technical debt according to Techopedia is: 
 
 > Technical debt is a concept in programming that reflects the extra development work that arises when code that is easy to implement in the short run is used instead of applying the best overall solution. [[7]](#7)
 
-To identify technical debt within Plotly.js, a wide range of options have been used. First, (static) code analysis tools are used to assess code quality. Afterwards manual inspection took place to examine the evolution of technical debt.
+To identify technical debt within Plotly.js, a wide range of options have been used. First, (static) code analysis tools are used to assess code quality. Afterwards manual inspection took place to examine the evolution of technical debt. Additionally, the documentation and testing debt will be covered. Lastly, the pull requests and issues on GitHub will be analysed to see if the developers are recognizing, discussing and managing the technical debt in the repository.
 
 ### SonarQube anlysis
 
