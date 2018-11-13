@@ -218,7 +218,10 @@ The **platform** module consists of supporting modules from external parties suc
 The diagram above can be considered as an oversimplification as the connections between modules are much more complex.
 
 ### Standardization of Design
-Plotly.js is a communityeffort which is developed through [GitHub](https://www.github.com). Development standards are communicated through their [Contributing guideline](https://github.com/plotly/plotly.js/blob/master/CONTRIBUTING.md).
+Since Plotly.js is an open source platform, everyone is free to contribute to the repository on GitHub. Seeing as multiple contributors are influencing Plotly.js, the core developers have standardised aspects of the design of the system to make it as maintainable, reliable and technically cohesive as possible. There is not a lot of information available about the general design of the platform, but the core developers have made some guidelines for new contributors to keep the overall code quality high and the licences applicable. The most important aspects of contributing to Plotly.js are discussed in the [Contributing guideline](https://github.com/plotly/plotly.js/blob/master/CONTRIBUTING.md) file:
+
+As the design pattern, there is actually no guidelines of using design patterns in the development.
+But during our browsing the codes, some design pattern like singleton, factory, etc are exploited frequently.
 
 ### Standardization of testing
 The standardization of testing helps to speed up the testing process and ensures a consistent result for each newly released product. Plotly uses the following standardization of testing:
