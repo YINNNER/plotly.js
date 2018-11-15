@@ -388,6 +388,29 @@ See figure 8 below, the circle size is often used as a metric to assess the numb
 ### Evolution of Technical Debt
 
 ## Conclusion
+Albeit Plotly.js is an infant in the visualization software market(born in 2015), it has already showed great prospect and attracted numerous developers for its powerful functionality. During our investigation of Plotly.js, we capture some interesting findings that we believe will be useful for us to understand the current state of Plotly.js
+
+Plotly.js has evolved into a active and thriving community project within just a few years. As an open source project, it got a lot of developers as its stakeholders. Also, individual users and commercial corporations like P&G, Redhat have their own stakes with it.
+
+As a visualization library based on Javascript and Web browser, plotly.js ensures the following features:
+
+> - Sophiscated Chart Types
+> - Fully Customizable
+> - High Performance
+> - Fully Interactive
+> - Universal
+
+You can trigger events with zoom, pan, hover to manipulate the plots created by Plotly.js. For other programming languages including Python, R, MATLAB, Plotly also provides corresponding library to facilitate other users. 
+
+Plotly.js implements a set of powerful functionalities including the creation of charts, exporting of image, responsive layout,  plot transformation, custom controls and animation. The implementation of these functionalities can be split into three layers: platform, core and toolkit. 
+
+However, as we dig deeper into its code, we find that its architecture is quite complex and the interdependencies of the modules are not so obvious. This makes it difficult for other developers to make contributions to it.
+
+In the performance aspect, Plotly.js shows great advantages in the response time, scalability without exorbitant requirement for hardware resources.
+
+We also exploit the SonarQube to examine the overall technical debt of Plotly.js. Result shows there is a large amount of bugs and a few vulnerabilities, which means there is still a lot for the developers to do so that they can achieve a long-term maintainable software.
+
+To conclude, Plotly.js has been growing quickly, listing in the top ladder of visualization software market. Despite some technical debts still exit, Plotly.js has shown great strength in its powerful functionality. We strongly suggest people to contribute to Plotly.js to make the growing open-source community stronger.
 
 ## References
 
