@@ -387,6 +387,30 @@ See figure 8 below, the circle size is often used as a metric to assess the numb
 
 ### Evolution of Technical Debt
 
+In this section, SonarQube Tool Analysis is used to find out the revolution of technical debt in the major releases of Plotly.js.
+
+There are 109 releases in total while 41 of them are major releases which either fixed significant bugs or added new features to it. We analyzed the techinical debt of them and one conclusion crystallized that the technical debt  gradually accumulates on the whole. However, this is expected since the amount of codes and features grew over time as well. The rating of maintainbility has always been marked A, as a consequence of the fact that the technical debt grew linear proportionally with the code.
+
+![Screen Shot 2018-11-16 at 12.44.08 PM](images/1.png)
+
+*Figure 10: The revolution of code lines, issue lines and Grads*
+
+### Discussion about the Technical Debt
+
+Technical debt will not be a catastrophe as long as it is awared and managed by the developers. We looked through the discussions in the **issue** and **pull request** sections of Plotly.js and searched for certain keywords indicating unfinished or bad code and a conclusino can be drawn that developers of Plotly.js are discussing about the technical debt and leave little unfinished or bad code behind. However, not all technical debt problems we found by using SonarQube is covered in the GitHub issue and pull request sections. But we also need to know that not all problems that SonarQube found are meaningful and some of them are related to other problems. What's more, there might be more discussions outside GitHub, like Twitter of Plotly.js and StackOverflow. So it can be said that the technical debt of Plotly.js is well-managed and under control by the developers of Plotly.js.
+
+![2](images/2.png)
+
+*Figure 11: Pull request concerning maintenance (Part)*
+
+![3](images/3.png)
+
+*Figure 12: Issues with the type of maintenance (Part)*
+
+![4](images/4.png)
+
+*Figure 13: Issues with the type of documentation (Part)*
+
 ## Conclusion
 
 ## References
