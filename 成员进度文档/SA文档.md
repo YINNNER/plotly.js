@@ -16,7 +16,7 @@ Built on top of d3.js[[1]](#1) and stack.gl, plotly.js is a high-level, declarat
 - [Functional View](#Functional-view)
 - [Development View](#Development-view)
 - [Performance & Scalability Perspective](#Performance--scalability-perspective)
-- [Technial debt](#Technial-debt)
+- [Technical debt](#Technical-debt)
 - [Conclusion](#Conclusion)
 - [References](#References)
 
@@ -355,7 +355,7 @@ site during an international crisis).
 
 ​	For the two reasons, nearly all users can use their device-no matter what kind of device it is, to get the graphs they want with some brief codes. what you need, are just a browser, a installed plotly.js plugin and of course, a keyboard
 
-## Technial debt
+## Technical debt
 
 After understanding the overall architecture of Plotly.js, we now take a deeper look at the current Plotly.js source code along with the recent changes made to the source code to indentitfy what features have been added or removed and how the technical debt is changing. To accomplish this, we used static code analysis as well as manual code inspection.
 
@@ -412,7 +412,7 @@ Technical debt will not be a catastrophe as long as it is awared and managed by 
 *Figure 13: Issues with the type of documentation (Part)*
 
 ## Conclusion
-Albeit Plotly.js is an infant in the visualization software market(born in 2015), it has already showed great prospect and attracted numerous developers for its powerful functionality. During our investigation of Plotly.js, we capture some interesting findings that we believe will be useful for us to understand the current state of Plotly.js
+Albeit Plotly.js is an infant in the visualization software market(born in 2015), it has already showed great prospect and attracted numerous developers for its powerful functionality. During our investigation of Plotly.js, we capture some interesting findings that we believe will be useful for us to understand the current state of Plotly.js.
 
 Plotly.js has evolved into a active and thriving community project within just a few years. As an open source project, it got a lot of developers as its stakeholders. Also, individual users and commercial corporations like P&G, Redhat have their own stakes with it.
 
@@ -426,7 +426,7 @@ As a visualization library based on Javascript and Web browser, plotly.js ensure
 
 You can trigger events with zoom, pan, hover to manipulate the plots created by Plotly.js. For other programming languages including Python, R, MATLAB, Plotly also provides corresponding library to facilitate other users. 
 
-Plotly.js implements a set of powerful functionalities including the creation of charts, exporting of image, responsive layout,  plot transformation, custom controls and animation. The implementation of these functionalities can be split into three layers: platform, core and toolkit. 
+Plotly.js implements a set of powerful functionalities including the creation of charts, exporting of image, responsive layout,  plot transformation, custom controls and animation. The implementation of these functionalities can be split into three layers: platform, core and toolkit.  Thus, **the architecture pattern used by Plotly.js is obviously layered pattern**. See the layers organization in [Modules organization](#Modules-organization).
 
 However, as we dig deeper into its code, we find that its architecture is quite complex and the interdependencies of the modules are not so obvious. This makes it difficult for other developers to make contributions to it.
 
