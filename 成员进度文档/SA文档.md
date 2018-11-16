@@ -17,6 +17,7 @@ Built on top of d3.js[[1]](#1) and stack.gl, plotly.js is a high-level, declarat
 - [Development View](#Development-view)
 - [Performance & Scalability Perspective](#Performance--scalability-perspective)
 - [Technical debt](#Technical-debt)
+- [Evolution Perspective](#Evolution-Perspective)
 - [Conclusion](#Conclusion)
 - [References](#References)
 
@@ -411,7 +412,42 @@ Technical debt will not be a catastrophe as long as it is awared and managed by 
 
 *Figure 13: Issues with the type of documentation (Part)*
 
+## Evolution Perspective
+
+In this section, the feature evolution of Plotly.js is discussed by comparing the changes among different major releases that added features to it, by which we can gain deeper understanding of the architecture and design of Plotly.js.
+
+Built on top of d3.js and stack.gl, plotly.js is developed as a Javascript Graphing Library to achieve customization, high performance and universality. 
+
+> plotly.js is a high-level, declarative charting library. plotly.js ships with 20 chart types, including 3D charts, statistical graphs, and SVG maps. 
+
+It was not until November 18th, 2015 that Plotly.js announced on its official Twitter account that it's made open-source. And before that, Plotly.js had been used mainly for commercial purposes. Therefore, based on the semantic versioning schema, the initial version of Plotly.js on GitHub is 1.0.0 which means it can be used in production. 
+
+There are 41 major releases of Plotly.js and some of them added major features to Plotly.js. Below are the milestome versions of Plotly.js with brief explanation based on the [CHANGELOG](https://github.com/YINNNER/plotly.js/blob/master/CHANGELOG.md):
+
+```1.0.0```: Add 2D WebGL plot engine.
+
+```1.1.0```: Add three plot config options: ```modeBarButtonsToRemove```, ```modeBarButtonsToAdd``` and ```modeBarButtons``` 
+
+```1.2.0```: All ```Plotly.__``` methods return with promise
+
+```1.4.0```: Lasso and rectangular selection interaction on scatter-maker and scatter-text.
+
+```1.6.0```: Allow SVG cartesian, 3D, geographic and pie chart coexistence.
+
+```1.13.0```: `scattermapbox` trace type added.
+
+`1.17.0`: Animation support for scatter trace added. Add frames and animate API -> `Plotly.animate`, `Plotly.addFrames` and `Plotly.deleteFrames`
+
+`1.22.0`: Support data-referenced annotation in gl2d subplots.
+
+`1.24.0`: Add support for multiple range sliders.
+
+`1.38.0`: Add 3D `cone` traces to visualize vector fields. Add ability to interactively change length and rotate line shapes. Add `toImageButtonOptions` config object to override to-image mode bar button options. Add Brazilian Portuguese (`pt-br`) locale
+
+`1.41.0`: Enable selection by clicking on points via new layout attribute `clickmode` and `flag 'select'`. Add stacked area charts via new attributes `stackgroup` and `stackgaps` in `scatter` traces. Add `barpolar` traces - which replace and augment `area` traces. Add `polar.hole` to punch hole at the middle of polar subplot offsetting the start of the radial range. Add an 'inner' radial axis drag box on polar subplots. Add `{responsive: true}` plot config option. Emit `plotly_webglcontextlost` event on WebGL context lost. Support all numbered HTML entities (decimal and hex) in text elements.
+
 ## Conclusion
+
 Albeit Plotly.js is an infant in the visualization software market(born in 2015), it has already showed great prospect and attracted numerous developers for its powerful functionality. During our investigation of Plotly.js, we capture some interesting findings that we believe will be useful for us to understand the current state of Plotly.js.
 
 Plotly.js has evolved into a active and thriving community project within just a few years. As an open source project, it got a lot of developers as its stakeholders. Also, individual users and commercial corporations like P&G, Redhat have their own stakes with it.
