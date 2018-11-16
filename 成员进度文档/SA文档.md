@@ -40,13 +40,13 @@ Table 1: Summary most important stakeholders.
 
 | Stakeholders  | Description                                                  |
 | ------------- | ------------------------------------------------------------ |
-| Acquirers     | The founders of Plotly are the ones that authorize funding for the products and system developement. |
-| Users         | Plotly is widely used in modeling, statistics and other drawing software, users include many people and companies who need to draw visual models. |
-| Testers       | Before the release of the new function, there will be a test team to test the function of the program, so as to ensure fewer mistakes. |
-| Developers    | The people working on the code for the end product are both the hard- and software team. |
+| Acquirers     | The founders of Plotly are the ones that authorize funding for the products and system developement. They are more concerned about the profit model of the product and the specific operation cost and market profit of the product.|
+| Users         | Plotly is widely used in modeling, statistics and other drawing software, users include many people and companies who need to draw visual models. Users are more concerned about the functionality of products. Their demand is that they hope that the function of the product will be more powerful, the operation will be simpler and the interface will be more friendly.|
+| Testers       | Before the release of the new function, there will be a test team to test the function of the program, so as to ensure fewer mistakes. Testers need to be responsible for guaranteeing product functionality, so they want the product structure to be clear and easy to test each module.|
+| Developers    | The people working on the code for the end product are both the hard- and software team. They want the code to be clear and easy to modify, manage and add to existing modules. Developers also need to take into account the speed, efficiency and memory footprint of the code.|
 | Support staff | The website plays a central role in staying in tough with users that report bugs as well as happily explaining nice projects that can be built with the products. |
-| Suppliers     | Partners who provide all kinds of hardware and software      |
-| Maintainers   | Software solutions are assessed by the Software development team in order to maintain the programming standards and architectural choices. |
+| Suppliers     | Partners who provide all kinds of hardware and software. They are partners of the company. They pay more attention to the mode of cooperation with the company, and also care about the degree of fit between the products and their products.|
+| Maintainers   | Software solutions are assessed by the Software development team in order to maintain the programming standards and architectural choices. It is hoped that the structure of the product will be clear, modular and easy to manage.     |
 
 ## Context View
 
@@ -230,6 +230,8 @@ When a developer wants to contribute to Plotly, a pull-request should be made on
 
 ### Codeline organization
 The codeline organization is the way that the source code is stored in a directory structure, managed via configuration management and how it is built and tested regularly [[3]](#3).In an open source project, it is important to organize the source code in a way that everyone can understand it and can add to it. An organized repository attracts enthusiastic programmers to start working on the code.
+The code is divided into three parts: function, testing and management. The functions include various drawing functions, web interface, interface management with other functional modules, etc. The test module contains test code, which can automatically test part of the project. Code management module mainly uses GitHub tools to manage code, upload and modify code. Good code composition can make the structure of the code clearer and more convenient for management and modification. At the same time, it saves a lot of time to read and understand code.
+The following figure shows the main code file structure of this project.
 ![code_organization](images/code_orgnization.png)
 ## Performance & Scalability Perspective
 
