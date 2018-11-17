@@ -149,7 +149,7 @@ In this part, main functionalities are discussed, and the functional capabilitie
 
 ### Functional capabilities
 
-Functional capabilities define what the system is required to do and whate it is not required to do[[3]](#3).  Since Plotly.js strives to create sophisticated, interactive charts, the main functionalities that it needs to have coincide with that. Table 2 shows the core functionalities required of Plotly.js and describes what their responsibilities are.
+Functional capabilities define what the system is required to do and what it is not required to do[[3]](#3).  Since Plotly.js strives to create sophisticated, interactive charts, the main functionalities that it needs to have coincide with that. Table 2 shows the core functionalities required of Plotly.js and describes what their responsibilities are.
 
 | Functionality       | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
