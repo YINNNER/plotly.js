@@ -36,7 +36,7 @@ This document gives an overview of the overarching architecture of the plotly.js
 ## Stakeholders
 Many stakeholders are involved with Plotly.
 
-Table 1: Summary most important stakeholders.
+*Table 1: Summary most important stakeholders.*
 
 | Stakeholders  | Description                                                  |
 | ------------- | ------------------------------------------------------------ |
@@ -47,6 +47,17 @@ Table 1: Summary most important stakeholders.
 | Support staff | The website plays a central role in staying in tough with users that report bugs as well as happily explaining nice projects that can be built with the products. |
 | Suppliers     | Partners who provide all kinds of hardware and software. They are partners of the company. They pay more attention to the mode of cooperation with the company, and also care about the degree of fit between the products and their products.|
 | Maintainers   | Software solutions are assessed by the Software development team in order to maintain the programming standards and architectural choices. It is hoped that the structure of the product will be clear, modular and easy to manage.     |
+
+![power-interest-grid](images/power-interest-grid.png)
+
+*Figure 2: Power-Interest Grid*
+
+The power versus interest relation of the stakeholders are shown in Figure 2 and are classified into 4 categories : 
+
+- **Low power and low interest :** Users, GitHub are stakeholders who do not has any control over Ploly.js, and do not have significant roles in the development of Ploly.js.
+- **Low power and high interest :** GitHub, and ventures of Ploly.js are stakeholders who follow the latest development of Ploly.js and are active in the discussion of Ploly.js, but they do not have significant power to directly change the Ploly.js system.
+- **High power and low interest :** Python, R, Matlab, Chart Studio and JavaScript are stakeholders who directly affect the development of Ploly.js. For both stakeholders, Ploly.js is only one of the few projects they affect and are not their main interest.
+- **High power and high interest :** Core developers have significant interest and power in developing Ploly.js.
 
 ## Context View
 
@@ -81,9 +92,9 @@ Plotly.js is Plotly written in Javascript. Plotly has wrappers or written in oth
 
 ![context_model](images/context_model.png)
 
-*Figure 2: The context model of Plotly.js*
+*Figure 3: The context model of Plotly.js*
 
-In figure2, the context model of Plotly.js is displayed. It shows the external entities and their relationships. A short description of the most important entities in the diagram follows:
+In figure 3, the context model of Plotly.js is displayed. It shows the external entities and their relationships. A short description of the most important entities in the diagram follows:
 
 The project, a Javascript charting library, is mainly <u>used by</u> major companies like [P&G](https://us.pg.com/), [RedHat](https://www.redhat.com/en), [Invesco](www.invesco.com/), [Alteryx](https://www.alteryx.com), etc. When it comes to the programming language, Plotly,js, like its name, is almost all <u>written in</u> Javascript except some explanatory files and so on.
 
@@ -138,11 +149,11 @@ In this part, main functionalities are discussed, and the functional capabilitie
 
 ### Functional capabilities
 
-Functional capabilities define what the system is required to do and whate it is not required to do[[3]](#3).  Since Plotly.js strives to create sophisticated, interactive charts, the main functionalities that it needs to have coincide with that. Table 1 shows the core functionality required of Plotly.js and describes what their responsibilities are.
+Functional capabilities define what the system is required to do and whate it is not required to do[[3]](#3).  Since Plotly.js strives to create sophisticated, interactive charts, the main functionalities that it needs to have coincide with that. Table 2 shows the core functionalities required of Plotly.js and describes what their responsibilities are.
 
 | Functionality       | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
-| Create charts       | The main component of the system is to create chats. Plotly.js can create different types of chats for finance, engineering, and the sciences. It has 5 major categories: baisc chats, statistical chats, scientific chats,  financial chats, maps and 3D chats. See all types of chats in Figure 2. |
+| Create charts       | The main component of the system is to create chats. Plotly.js can create different types of chats for finance, engineering, and the sciences. It has 5 major categories: baisc chats, statistical chats, scientific chats,  financial chats, maps and 3D chats. See all types of chats in Figure 4. |
 | Static image export | Users can save plotly graphs to static images and view them in the browser. Plotly supports jpg, png and svg image export. |
 | Responsive layout   | By setting plotly.js`config` to `{ responsive: true }`, plots will be resized upon changing the size of the window. This is especially useful for mobile devices switching from portrait to landscape. |
 | React component     | Users can use react-plotly.js[[5]](#5) to embed D3 charts in your React-powered web application. This React component takes the chart type, data, and styling as Plotly JSON[[6]](#6) in its data and layout props, then draws the chart using Plotly.js. |
@@ -151,13 +162,15 @@ Functional capabilities define what the system is required to do and whate it is
 | Custom chart events | Users can use Plotly.js to do custom chat events like click events, hover events, zoom events and disable zoom events. |
 | Animations          | Users can use Plotly.js to do many animations like baisic animations, adding sliders to animations, filled-area animation and map animation. |
 
+*Table 2: The core functionalities of Plotly.js and their descriptions. *
+
 ![plotly.js JavaScript Graphing Library](images/plotly.js_JavaScript_Graphing_Library.png)
 
-*Figure 2: All types of charts that Plotly.js can create.*
+*Figure 4: All types of charts that Plotly.js can create.*
 
 ### External interfaces
 
-External interfaces are the data, event, and control flows between your system and others.[[3]](#3)The external interfaces provided by Plotly.js mainly concern functinality to extension development possible. Among other things the functinality concerns plotting, layout, export  and so on. There are too many interfaces to completely list them in this report, so for a full list of available external interface refer to the [API](https://github.com/plotly/plotly.js/tree/master/src/plot_api) in `\src\plot_api`folder. As an example of what is provided, table 2 shows a brief introduction of all accessable inerfaces. With all these useful external interfaces, developers can use them to do main functionalities.
+External interfaces are the data, event, and control flows between your system and others.[[3]](#3)The external interfaces provided by Plotly.js mainly concern functinality to extension development possible. Among other things the functinality concerns plotting, layout, export  and so on. There are too many interfaces to completely list them in this report, so for a full list of available external interface refer to the [API](https://github.com/plotly/plotly.js/tree/master/src/plot_api) in `\src\plot_api`folder. As an example of what is provided, table 3 shows a brief introduction of all accessable inerfaces. With all these useful external interfaces, developers can use them to do main functionalities.
 
 | API file                 | Description of how Plotly.js interacts with it               |
 | ------------------------ | ------------------------------------------------------------ |
@@ -175,11 +188,11 @@ External interfaces are the data, event, and control flows between your system a
 | index.js                 | The indexes of all functional modules in plot_api folder.    |
 | manage_arrays.js         | Manages arrays of layout components in relayout handles them all with a consistent interface. |
 
-*Table 2: All of external interface and how Plotly.js interacts with them*
+*Table 3: All of external interface and how Plotly.js interacts with them*
 
 ### Internal structure
 
-In this part, different modules of plotly.js is described. Since Plotly.js is a javescript graphing library, all the functionalities of Plotly.js are relatively independent. Each of the different functionalities belongs to different modules, which are in table 3. And figure 3 shows how different functionalities interact with each other and how they combine together.
+In this part, different modules of plotly.js is described. Since Plotly.js is a javescript graphing library, all the functionalities of Plotly.js are relatively independent. Each of the different functionalities belongs to different modules, which are in table 4. And figure 5 shows how different functionalities interact with each other and how they combine together.
 
 | Functionality       | Corresponding Module |
 | ------------------- | -------------------- |
@@ -192,11 +205,11 @@ In this part, different modules of plotly.js is described. Since Plotly.js is a 
 | Custom chart events | components           |
 | Animations          | components           |
 
-*Table 3: Functionalities and their corresponding modules.*
+*Table 4: Functionalities and their corresponding modules.*
 
 ![functional view](images/functional_view.png)
 
- *Figure 3: Functional structure model*
+ *Figure 5: Functional structure model*
 
 ## Development View
 This particular view highlights the concerns and interests of the developers and testers of the project. The different modules in the project have been identified, the file structure has been researched and important standardizations of processes are discussed.
@@ -207,7 +220,7 @@ The plotly.js source code is organized into several modules that encapsulates a 
 
 ![img](images/module_organization.png)
 
- *Figure 4: Module organization model*
+ *Figure 6: Module organization model*
 
 The **core** module comprises the core Plotly.js functionality for implementing 2D/3D plotting. The main functional components as described in the Functional View is implemented here. Most of the components like 2D annotations and 3D annotations are implemented inside the Component module. Some other important functionality are encapsulated into several other modules: fonts manipulation in fonts module; operations for plotting in plots module; gragh transformation in transforms module.
 
@@ -233,6 +246,9 @@ The codeline organization is the way that the source code is stored in a directo
 The code is divided into three parts: function, testing and management. The functions include various drawing functions, web interface, interface management with other functional modules, etc. The test module contains test code, which can automatically test part of the project. Code management module mainly uses GitHub tools to manage code, upload and modify code. Good code composition can make the structure of the code clearer and more convenient for management and modification. At the same time, it saves a lot of time to read and understand code.
 The following figure shows the main code file structure of this project.
 ![code_organization](images/code_orgnization.png)
+
+*Figure 7: Code file struture of Ploly.js.*
+
 ## Performance & Scalability Perspective
 
 | Desired Quality       | The ability of the system to predictably execute within its mandated performance profile and to handle increased processing volumes |
@@ -332,13 +348,13 @@ site during an international crisis).
 
 ![img](images/PX1.png)
 
-*Figure 5: example: uploaded graph type by netizen*
+*Figure 8: example: uploaded graph type by netizen*
 
 
 
 ![img](images/PX2.png)
 
- *Figure 6: Click on certain entities on customized graph we can see the source code*
+ *Figure 9: Click on certain entities on customized graph we can see the source code*
 
 ​	So this feature dramatically increases the scalability of Plotly.js. It actually fosters a open source community for all netizen or programmers who are interested in visualization.
 
@@ -370,23 +386,23 @@ To identify technical debt within Plotly.js, a wide range of options have been u
 
 ### SonarQube anlysis
 
-SonarQube is a platform for continuous software quality monitoring. This platform is able to analyse a large software project like Plotly.js in a matter of minutes. It provides the user with crucial insights about bugs, security and technical debt within the project. Since we failed to run sonar scanner in `\dist` folder which contains only distribution files that are too large and have many duplications, we ran the SonarQube analysis tool on the latest version of Plotly.js ([v1.41.3](https://github.com/plotly/plotly.js/releases/tag/v1.41.3)) except for `\dist` folder. And the result has given the following insights about technical debt. SonarQube reports a large amount of bugs (40), vulnerabilities (2) and code smells (99), ranging from refactor recommendations to limiting the large number of lines in a class to the amount of duplicated code (which represents only 6.0% of the entire code base). The issues ranged from severe (Blocker) to harmless (Info) and affected almost every part of the system. See overview produced by SonarQube in figure 7.
+SonarQube is a platform for continuous software quality monitoring. This platform is able to analyse a large software project like Plotly.js in a matter of minutes. It provides the user with crucial insights about bugs, security and technical debt within the project. Since we failed to run sonar scanner in `\dist` folder which contains only distribution files that are too large and have many duplications, we ran the SonarQube analysis tool on the latest version of Plotly.js ([v1.41.3](https://github.com/plotly/plotly.js/releases/tag/v1.41.3)) except for `\dist` folder. And the result has given the following insights about technical debt. SonarQube reports a large amount of bugs (40), vulnerabilities (2) and code smells (99), ranging from refactor recommendations to limiting the large number of lines in a class to the amount of duplicated code (which represents only 6.0% of the entire code base). The issues ranged from severe (Blocker) to harmless (Info) and affected almost every part of the system. See overview produced by SonarQube in figure 10.
 
 ![sonar1](images/sonar.png)
 
-*Figure 7: Overview produced by SonarQube of the Plotly.js project.*
+*Figure 10: Overview produced by SonarQube of the Plotly.js project.*
 
 The technical debt analysis however, provides a rather good insight into this phenomenon. SonarQube uses the SQALE methodology, which is a method to support the evaluation of source code independent of language or code analysis tools. It provides reliability overview and maintainability overview, which are useful to do technical debt analysis. 
 
-See figure 8 below, the circle size is often used as a metric to assess the number of bugs. It's easily to know that When there are more bugs in a file, it takes more reliability remediation effort. Since there are some files with a large amout of bugs, the general reliability rating is E, which means there is at least one blocker bug. This insight gives indication that developers working for plotly.js should spend some time to fix serious bugs. Then, see figure 9, the circle size is often used as a metric to assess the code smells. A code smell is any characteristic in the source code of a program that possibly indicates a deeper problem.[[8]](#8) We can see the majority of the files are rating A, and only one file's maintainability rating is E. This insight gives indication that developers working for plotly.js are highly focused on generating long-term, maintainable software.
+See figure 11 below, the circle size is often used as a metric to assess the number of bugs. It's easily to know that When there are more bugs in a file, it takes more reliability remediation effort. Since there are some files with a large amout of bugs, the general reliability rating is E, which means there is at least one blocker bug. This insight gives indication that developers working for plotly.js should spend some time to fix serious bugs. Then, see figure 12, the circle size is often used as a metric to assess the code smells. A code smell is any characteristic in the source code of a program that possibly indicates a deeper problem.[[8]](#8) We can see the majority of the files are rating A, and only one file's maintainability rating is E. This insight gives indication that developers working for plotly.js are highly focused on generating long-term, maintainable software.
 
 ![reliability](images/reliability.png)
 
-*Figure 8: Reliability Overview of Plotly.js project.*
+*Figure 11: Reliability Overview of Plotly.js project.*
 
 ![maintainability](images/maintainability.png)
 
-*Figure 9: Maintainability Overview of Plotly.js project.* 
+*Figure 12: Maintainability Overview of Plotly.js project.* 
 
 ### Evolution of Technical Debt
 
@@ -396,7 +412,7 @@ There are 109 releases in total while 41 of them are major releases which either
 
 ![Screen Shot 2018-11-16 at 12.44.08 PM](images/1.png)
 
-*Figure 10: The revolution of code lines, issue lines and Grads*
+*Figure 13: The revolution of code lines, issue lines and Grads*
 
 ### Discussion about the Technical Debt
 
@@ -404,15 +420,15 @@ Technical debt will not be a catastrophe as long as it is awared and managed by 
 
 ![2](images/2.png)
 
-*Figure 11: Pull request concerning maintenance (Part)*
+*Figure 14: Pull request concerning maintenance (Part)*
 
 ![3](images/3.png)
 
-*Figure 12: Issues with the type of maintenance (Part)*
+*Figure 15: Issues with the type of maintenance (Part)*
 
 ![4](images/4.png)
 
-*Figure 13: Issues with the type of documentation (Part)*
+*Figure 16: Issues with the type of documentation (Part)*
 
 ## Evolution Perspective
 
