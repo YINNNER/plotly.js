@@ -442,6 +442,14 @@ It was not until November 18th, 2015 that Plotly.js announced on its official Tw
 
 There are 41 major releases of Plotly.js and some of them added major features to Plotly.js. Below are the milestome versions of Plotly.js with brief explanation based on the [CHANGELOG](https://github.com/YINNNER/plotly.js/blob/master/CHANGELOG.md):
 
+![](images/v1.png)
+
+*Figure 17: The history of Plotly.js important version (part 1)*
+
+![](images/v2.png)
+
+*Figure 18: The history of Plotly.js important version (part 2)*
+
 ```1.0.0```: Add 2D WebGL plot engine.
 
 ```1.1.0```: Add three plot config options: ```modeBarButtonsToRemove```, ```modeBarButtonsToAdd``` and ```modeBarButtons``` 
