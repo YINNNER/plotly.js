@@ -345,10 +345,11 @@ site during an international crisis).
 ​	 As an open source visualization JS library, Plotly.js does pretty well in its scalability and maintainability.
 
 ​	Firstly, plotly supports users' customized graph types. Which means users can upload their own graph types(of course written in JavaScript). In fact, plotly.js comes with hundreds of types of graph congenitally, like Scientific graphs, revenue graphs, 3-D graphs.
+**(Sorry for mistaking "support uploading of user-customized graphs" for "support uploading customized graph type" because of misunderstanding... Users can only upload and share the graphs they created on the forum, but not customized graph type. In fact, Plotly.js has already provided users with a complete set of graph types)**
 
 ![img](images/PX1.png)
 
-*Figure 8: example: uploaded graph type by netizen*
+*Figure 8: example: uploaded graph by netizen*
 
 
 
