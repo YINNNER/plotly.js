@@ -473,6 +473,12 @@ There are 41 major releases of Plotly.js and some of them added major features t
 
 `1.41.0`: Enable selection by clicking on points via new layout attribute `clickmode` and `flag 'select'`. Add stacked area charts via new attributes `stackgroup` and `stackgaps` in `scatter` traces. Add `barpolar` traces - which replace and augment `area` traces. Add `polar.hole` to punch hole at the middle of polar subplot offsetting the start of the radial range. Add an 'inner' radial axis drag box on polar subplots. Add `{responsive: true}` plot config option. Emit `plotly_webglcontextlost` event on WebGL context lost. Support all numbered HTML entities (decimal and hex) in text elements.
 
+From the CHANGELOG we can see that the structure of Plotly.js hasn't changed much from the time being, except version`1.0.0` and `1.2.0`. In version `1.0.0`, 2D WebGL plot engine was added. And in version `1.2.0`, `webpack` was added into `package.json` so that Plotly.js can be used by web pack users.
+
+The rest versions of Plotly.js mainly added lots of new APIs in `core.plot_api` and config options in `core` to make it more customizable. Moreover, different chart types and trace types were added in module `core.compoents` to satisfy more needs of the users. For example, version `1.1.0` added config options like `modeBarButtonsToRemove`, `modeBarButtonsToAdd` and `modeBarButtons` which combine to add the ability to remove specific mode bar buttons add custom mode bar buttons and fully customize the mode bar. Besides, methods like `Plotly.validate`(version `1.15.0`) were added in `toolkit.Plot` or `toolkit.Plot3D`. And new trace types are introduced in versions like `1.26.0` where `carpet`, `scattercarpet` and `contourcarpet` traces types are added into carpets plots.
+
+On the whole, Plotly.js has become more customizable and more versatile over time with little changes in its structure.  This is achieved by adding new APIs, config options, chart types and traces types into its different modules like `core.components`,  `core.plot_api`, `toolkit.Plot` and `toolkit.Plot3D`.
+
 ## Conclusion
 
 Albeit Plotly.js is an infant in the visualization software market(born in 2015), it has already showed great prospect and attracted numerous developers for its powerful functionality. During our investigation of Plotly.js, we capture some interesting findings that we believe will be useful for us to understand the current state of Plotly.js.
